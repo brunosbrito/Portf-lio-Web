@@ -1,65 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--Style CSS-->
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4bf1d57275.js" crossorigin="anonymous"></script>
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <title>Portfólio Bruno Brito</title>
 </head>
+
 <body>
     <header>
-        <div class="title">
-            <p>Bruno Brito</p>
+        <div class="nav">
+            <div>
+                <p>Bruno Brito</p>
+            </div>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li> <a href="#skilss">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul class="home">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li> <a href="#habilidades">Habilidades</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Me contate</a></li>
-            </ul>
-        </div>
+
     </header>
     <div class="section-1">
         <div class="presentation">
             <h3>Olá, eu me chamo Bruno</h3>
-            <h4>Estudante de desenvolvimento de software na <a href="https://www.betrybe.com/" target="_blank">Trybe</a></h4>
+            <h4>Estudante de desenvolvimento de software na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>
+            </h4>
             <p>Estou no inicio da minha jornada <br> como desenvolvedor web</p>
         </div>
         <div>
-            <img src="./img/Brunobrito.jpeg" alt="Foto do Bruno Brito">
+            <img class='profile-img' src="./img/Brunobrito.jpeg" alt="Foto do Bruno Brito">
         </div>
     </div>
 
-    <div id="about" class="section-2">
-        <h4>Sobre Mim</h4>
-        <p>Estudante Dev Full Stack na<br>
-        Sou Brasileiro e moro em Betim - MG.
-        </p>
+    <div class="section-2">
+        <div>
+            <h4 class='h4'>Minhas Habildades</h4>
+            <div id="skills">
+                <div>
+                    <h5>Soft Skills</h5>
+                    <ul>
+                        <li>Autodidata</li>
+                        <li>Calmo</li>
+                        <li>Dedicada</li>
+                        <li>Honesta</li>
+                        <li>Comunicativa</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Hard Skills</h5>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div>
+                <a href="https://www.linkedin.com/in/brunos-brito/" target="_blank"><i class="fa fa-2x fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/brunosbrito" target="_blank"><i class=" fa fa-2x fa-github"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5531975669937" target="_blank"><i
+                        class=" fa fa-2x fa-whatsapp"></i></a>
+                <a href="mailto:brunobrito728@gmail.com" target="_blank"><i class=" fa fa-2x fa-envelope"></i></a>
+            </div>
+            <h4 class="about-h4">Sobre Mim</h4>
+            <P>Sou uma pessoa motivada que sempre está em busca de crescimento pessoal e profissional e adoro superar
+                desafios e ir além de onde eu posso ir.</P>
+        </div>
     </div>
-    <div>
-        <ul id="habilidades">
-            <h3>Minhas Habilidades</h3>
-            <li><strong>Autodidata</strong></li>
-            <li>Calmo</li>
-            <li>Dedicada</li>
-            <li>Honesta</li>
-            <li>Comunicativa</li>
-        </ul>   
+    <div class='section-3'>
+        <h4>Meus Projetos</h4>
+        <div id="projects">
+            <div class="content">
+                <div class="div-img"><img class="project-img" src="./img/recipes-app.png" alt=""></div>
+                <div class="project-content">
+                    <h5>Recipes App</h5>
+                    <p>Link do <a href="https://github.com/brunosbrito/recipes-app" target="_blank">Repositório</a>
+                    <p class="tec">Tecnologias utlizadas</p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Context Api</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="content">
+                <div class="div-img"><img class="project-img" src="./img/starwars-search.png" alt=""></div>
+                <div class="project-content">
+                    <h5>Star Wars Search</h5>
+                    <p>Link do <a href="https://github.com/brunosbrito/starwars-planets-search"
+                            target="_blank">Repositório</a>
+                    <p class="tec">Tecnologias utlizadas</p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Context Api</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <p>Um blog bastante interessante sobre tecnoliga <a href="https://tecnoblog.net/" target="_blank">tecnoblog</a></p>
-    </div>
- 
+
+
 </body>
+
 </html>
